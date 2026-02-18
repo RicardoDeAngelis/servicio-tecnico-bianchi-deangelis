@@ -27,3 +27,10 @@ No se necesita ningún servidor ni instalación de dependencias: es solo fronten
 
 > Nota: Las órdenes se guardan solamente en el `localStorage` del navegador para fines de demostración. No hay backend real.
 
+## Publicar en GitHub Pages
+
+Para subir la página a GitHub Pages y tenerla online, sigue las instrucciones en `DEPLOY.md`.
+
+Una vez publicado, tu sitio estará disponible en:
+- `https://TU_USUARIO.github.io/NOMBRE_REPOSITORIO/`
+
