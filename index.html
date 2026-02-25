@@ -3,11 +3,51 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Servicio Técnico Bianchi &amp;&amp; De Angelis</title>
+    <title>
+      Servicio Técnico Bianchi &amp;&amp; De Angelis | Aires acondicionados y electricidad
+    </title>
     <meta
       name="description"
-      content="Servicio técnico profesional de aires acondicionados y electricidad doméstica. Instalación, reparación y mantenimiento con atención rápida."
+      content="Servicio Técnico Bianchi & De Angelis: instalación, reparación y mantenimiento de aires acondicionados y electricidad domiciliaria, con atención clara y sin complicaciones."
     />
+    <meta
+      name="keywords"
+      content="servicio técnico, aire acondicionado, electricidad domiciliaria, instalación de aire acondicionado, electricista a domicilio, Bianchi, De Angelis"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="language" content="es" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Servicio Técnico Bianchi &amp; De Angelis" />
+    <meta
+      property="og:description"
+      content="Servicio técnico claro y confiable para aires acondicionados y electricidad en tu hogar o negocio."
+    />
+    <meta property="og:locale" content="es_AR" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Servicio Técnico Bianchi &amp; De Angelis" />
+    <meta
+      name="twitter:description"
+      content="Instalación, reparación y mantenimiento de aires acondicionados y electricidad domiciliaria."
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["HVACBusiness", "Electrician"],
+        "name": "Servicio Técnico Bianchi & De Angelis",
+        "description": "Servicio técnico profesional de aires acondicionados y electricidad domiciliaria.",
+        "telephone": "+54 9 11 1234-5678",
+        "serviceType": [
+          "Instalación y reparación de aire acondicionado",
+          "Mantenimiento preventivo de aires",
+          "Electricidad domiciliaria"
+        ],
+        "availableLanguage": ["es"]
+      }
+    </script>
+
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,37 +69,33 @@
           </div>
         </div>
         <nav class="topbar-nav">
-          <button class="nav-link" data-route="home">Inicio</button>
-          <button class="nav-link" data-route="services">Servicios</button>
-          <button class="nav-link" data-route="request">Solicitar servicio</button>
-          <button class="nav-link" data-route="status">Estado de orden</button>
-          <button class="nav-link primary" data-route="contact">Contacto</button>
+          <a class="nav-link" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#servicios">Servicios</a>
+          <a class="nav-link primary" href="#contacto">Contacto</a>
         </nav>
-        <button class="topbar-toggle" id="topbarToggle" aria-label="Menú">
-          ☰
-        </button>
       </header>
 
       <main class="main">
-        <section id="route-home" class="route active">
+        <section id="inicio" class="section">
           <div class="hero">
             <div class="hero-content">
-              <h1>
-                Servicio técnico confiable para
-                <span class="hero-highlight">aires acondicionados</span> y
-                <span class="hero-highlight">electricidad doméstica</span>
-              </h1>
+              <h1>Servicio Técnico Bianchi &amp;&amp; De Angelis</h1>
               <p class="hero-subtitle">
-                Instalación, reparación y mantenimiento con rápida respuesta. Cuidamos tu
-                hogar y tu confort con técnicos certificados.
+                Instalación, reparación y mantenimiento de
+                <span class="hero-highlight">aires acondicionados</span> y
+                <span class="hero-highlight">electricidad domiciliaria</span>. Explicamos todo
+                en sencillo y coordinamos el servicio sin vueltas.
               </p>
               <div class="hero-actions">
-                <button class="btn btn-primary" data-route="request">
-                  Solicitar servicio ahora
-                </button>
-                <button class="btn btn-ghost" data-route="services">
-                  Ver servicios
-                </button>
+                <a class="btn btn-primary" href="tel:+5491112345678">Llamar ahora</a>
+                <a
+                  class="btn btn-ghost"
+                  href="https://wa.me/5491112345678?text=Hola%20quiero%20consultar%20por%20un%20servicio%20t%C3%A9cnico%20de%20aires%20o%20electricidad."
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Escribir por WhatsApp
+                </a>
               </div>
               <dl class="hero-metrics">
                 <div class="metric">
@@ -67,8 +103,8 @@
                   <dd>Equipos reparados</dd>
                 </div>
                 <div class="metric">
-                  <dt>24/7</dt>
-                  <dd>Emergencias eléctricas</dd>
+                  <dt>15+</dt>
+                  <dd>Años de experiencia</dd>
                 </div>
                 <div class="metric">
                   <dt>4.9/5</dt>
@@ -76,51 +112,12 @@
                 </div>
               </dl>
             </div>
-            <div class="hero-panel">
-              <h2>Agendá tu servicio</h2>
-              <p class="hero-panel-subtitle">
-                Completá los datos y te contactamos en menos de 30 minutos hábiles.
-              </p>
-              <form id="quickRequestForm" class="card-form">
-                <div class="field">
-                  <label for="qr-name">Nombre y apellido</label>
-                  <input id="qr-name" name="name" type="text" placeholder="Ej: Juan Pérez" required />
-                </div>
-                <div class="field">
-                  <label for="qr-phone">Teléfono / WhatsApp</label>
-                  <input
-                    id="qr-phone"
-                    name="phone"
-                    type="tel"
-                    placeholder="Ej: +54 9 11 1234-5678"
-                    required
-                  />
-                </div>
-                <div class="field">
-                  <label for="qr-service">Tipo de servicio</label>
-                  <select id="qr-service" name="service" required>
-                    <option value="">Seleccioná una opción</option>
-                    <option value="ac-install">Instalación de aire acondicionado</option>
-                    <option value="ac-repair">Reparación de aire acondicionado</option>
-                    <option value="ac-maintenance">Mantenimiento preventivo</option>
-                    <option value="electric-failure">Falla eléctrica / cortocircuito</option>
-                    <option value="electric-install">Instalaciones y tomas</option>
-                  </select>
-                </div>
-                <button type="submit" class="btn btn-primary btn-full">
-                  Enviar solicitud
-                </button>
-                <p class="form-note">
-                  No es una reserva definitiva. Te llamaremos para confirmar día y horario.
-                </p>
-              </form>
-            </div>
           </div>
 
           <section class="section">
             <header class="section-header">
               <h2>¿Por qué elegirnos?</h2>
-              <p>Un servicio pensado para que no te preocupes por nada.</p>
+              <p>Un servicio pensado para que entiendas qué vamos a hacer y cuánto cuesta.</p>
             </header>
             <div class="grid three">
               <article class="card">
@@ -134,7 +131,7 @@
                 <h3>Profesionales matriculados</h3>
                 <p>
                   Técnicos especializados en refrigeración y electricidad, cumpliendo normas de
-                  seguridad vigentes.
+                  seguridad vigentes y buenas prácticas.
                 </p>
               </article>
               <article class="card">
@@ -148,259 +145,56 @@
           </section>
         </section>
 
-        <section id="route-services" class="route">
+        <section id="servicios" class="section">
           <header class="section-header">
             <h2>Servicios</h2>
-            <p>Soluciones integrales en climatización y electricidad para tu hogar o negocio.</p>
+            <p>Soluciones claras en climatización y electricidad para tu casa o local.</p>
           </header>
 
-          <div class="tabs">
-            <button class="tab active" data-tab="ac">Aires acondicionados</button>
-            <button class="tab" data-tab="electric">Electricidad doméstica</button>
-          </div>
-
-          <div class="tab-panels">
-            <div class="tab-panel active" data-panel="ac">
-              <div class="grid three">
-                <article class="card service-card">
-                  <h3>Instalación completa</h3>
-                  <p>
-                    Instalación de equipos split y ventana, cálculo de potencia recomendada y
-                    recorrido prolijo de cañerías.
-                  </p>
-                  <ul class="pill-list">
-                    <li>Instalación certificada</li>
-                    <li>Prueba de estanqueidad</li>
-                    <li>Incluye vacío y gas</li>
-                  </ul>
-                </article>
-                <article class="card service-card">
-                  <h3>Reparación y recarga</h3>
-                  <p>
-                    Solucionamos pérdidas de gas, problemas de placa electrónica, sensores y
-                    drenajes obstruidos.
-                  </p>
-                  <ul class="pill-list">
-                    <li>Reparación de placas</li>
-                    <li>Recarga de gas</li>
-                    <li>Urgencias verano</li>
-                  </ul>
-                </article>
-                <article class="card service-card">
-                  <h3>Mantenimiento preventivo</h3>
-                  <p>
-                    Limpieza profunda, desinfección y control general para mejorar el rendimiento
-                    y alargar la vida útil.
-                  </p>
-                  <ul class="pill-list">
-                    <li>Limpieza de filtros</li>
-                    <li>Lavado de unidad</li>
-                    <li>Control de consumo</li>
-                  </ul>
-                </article>
-              </div>
-            </div>
-
-            <div class="tab-panel" data-panel="electric">
-              <div class="grid three">
-                <article class="card service-card">
-                  <h3>Emergencias eléctricas</h3>
-                  <p>
-                    Corte total, disparo de térmicas, olor a quemado o cortocircuitos. Atención
-                    prioritaria.
-                  </p>
-                  <ul class="pill-list">
-                    <li>Atención 24/7</li>
-                    <li>Diagnóstico rápido</li>
-                    <li>Reparación segura</li>
-                  </ul>
-                </article>
-                <article class="card service-card">
-                  <h3>Instalaciones y reformas</h3>
-                  <p>
-                    Nuevas líneas, tomas, llaves, iluminación LED y adecuación de tableros
-                    eléctricos.
-                  </p>
-                  <ul class="pill-list">
-                    <li>Planos y cálculo</li>
-                    <li>Balance de cargas</li>
-                    <li>Materiales homologados</li>
-                  </ul>
-                </article>
-                <article class="card service-card">
-                  <h3>Seguridad y puesta a tierra</h3>
-                  <p>
-                    Revisión de puesta a tierra, disyuntores diferenciales y protección para
-                    electrodomésticos.
-                  </p>
-                  <ul class="pill-list">
-                    <li>Protección de personas</li>
-                    <li>Evita daños por tensión</li>
-                    <li>Certificados disponibles</li>
-                  </ul>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="route-request" class="route">
-          <header class="section-header">
-            <h2>Solicitar servicio</h2>
-            <p>
-              Completá el formulario y generaremos una orden interna para hacer el seguimiento.
-            </p>
-          </header>
-
-          <div class="grid two">
-            <form id="requestForm" class="card card-form">
-              <fieldset class="fieldset">
-                <legend>Datos de contacto</legend>
-                <div class="field">
-                  <label for="name">Nombre y apellido</label>
-                  <input id="name" name="name" type="text" required />
-                </div>
-                <div class="field">
-                  <label for="phone">Teléfono / WhatsApp</label>
-                  <input id="phone" name="phone" type="tel" required />
-                </div>
-                <div class="field">
-                  <label for="email">Email (opcional)</label>
-                  <input id="email" name="email" type="email" />
-                </div>
-              </fieldset>
-
-              <fieldset class="fieldset">
-                <legend>Detalle del servicio</legend>
-                <div class="field">
-                  <label for="category">Categoría</label>
-                  <select id="category" name="category" required>
-                    <option value="">Seleccioná una opción</option>
-                    <option value="ac">Aire acondicionado</option>
-                    <option value="electric">Electricidad doméstica</option>
-                  </select>
-                </div>
-                <div class="field">
-                  <label for="priority">Urgencia</label>
-                  <select id="priority" name="priority" required>
-                    <option value="normal">Normal (48-72 hs)</option>
-                    <option value="medium">Rápida (24 hs)</option>
-                    <option value="high">Urgente (mismo día)</option>
-                  </select>
-                </div>
-                <div class="field">
-                  <label for="address">Dirección</label>
-                  <input
-                    id="address"
-                    name="address"
-                    type="text"
-                    placeholder="Calle, número, piso, barrio"
-                    required
-                  />
-                </div>
-                <div class="field">
-                  <label for="description">Descripción del problema</label>
-                  <textarea
-                    id="description"
-                    name="description"
-                    rows="4"
-                    placeholder="Ej: El aire enfría poco y pierde agua por la unidad interior..."
-                    required
-                  ></textarea>
-                </div>
-                <div class="field inline">
-                  <label class="checkbox">
-                    <input id="hasWarranty" name="hasWarranty" type="checkbox" />
-                    <span>Mi equipo tuvo un servicio previo con ustedes</span>
-                  </label>
-                </div>
-              </fieldset>
-
-              <button type="submit" class="btn btn-primary btn-full">
-                Generar orden
-              </button>
-
-              <p class="form-note">
-                Te mostraremos un número de orden de referencia para que puedas consultar el
-                estado más adelante.
+          <div class="grid three">
+            <article class="card service-card">
+              <h3>Aires acondicionados</h3>
+              <p>
+                Instalación, reparación y mantenimiento de equipos split y ventana para que tu
+                ambiente se mantenga cómodo todo el año.
               </p>
-            </form>
-
-            <aside class="card">
-              <h3>¿Cómo funciona?</h3>
-              <ol class="steps">
-                <li>
-                  <span class="step-number">1</span>
-                  <div>
-                    <h4>Completás el formulario</h4>
-                    <p>Nos contás el problema y tus datos de contacto.</p>
-                  </div>
-                </li>
-                <li>
-                  <span class="step-number">2</span>
-                  <div>
-                    <h4>Te llamamos para coordinar</h4>
-                    <p>Confirmamos día, horario y presupuesto estimado.</p>
-                  </div>
-                </li>
-                <li>
-                  <span class="step-number">3</span>
-                  <div>
-                    <h4>Realizamos el trabajo</h4>
-                    <p>El técnico realiza el servicio y te entrega garantía.</p>
-                  </div>
-                </li>
-              </ol>
-
-              <div class="info-box">
-                <h4>Información importante</h4>
-                <ul>
-                  <li>Cubrimos capital y zona norte/sur (consultar otras zonas).</li>
-                  <li>Podés abonar en efectivo, transferencia o tarjeta.</li>
-                  <li>Garantía de 3 a 6 meses según el tipo de trabajo.</li>
-                </ul>
-              </div>
-            </aside>
-          </div>
-        </section>
-
-        <section id="route-status" class="route">
-          <header class="section-header">
-            <h2>Consultar estado de orden</h2>
-            <p>
-              Ingresá el número de orden que te brindamos al crear el servicio para ver su
-              estado.
-            </p>
-          </header>
-          <div class="grid two">
-            <form id="statusForm" class="card card-form">
-              <div class="field">
-                <label for="orderId">N.º de orden</label>
-                <input
-                  id="orderId"
-                  name="orderId"
-                  type="text"
-                  placeholder="Ej: SC-2026-00123"
-                  required
-                />
-              </div>
-              <button type="submit" class="btn btn-primary btn-full">
-                Ver estado
-              </button>
-              <p class="form-note">
-                Esta es una simulación local: los datos se guardan solo en tu navegador.
+              <ul class="pill-list">
+                <li>Instalación y retiro de equipos</li>
+                <li>Limpieza y desinfección</li>
+                <li>Revisión de consumo</li>
+              </ul>
+            </article>
+            <article class="card service-card">
+              <h3>Mantenimiento preventivo</h3>
+              <p>
+                Limpieza profunda de filtros y unidades, control de gas y chequeo general para
+                evitar fallas en plena temporada.
               </p>
-            </form>
-            <div id="statusResult" class="card status-result empty">
-              <p>Ingresá un número de orden para ver su estado.</p>
-            </div>
+              <ul class="pill-list">
+                <li>Limpieza de filtros y bandejas</li>
+                <li>Chequeo de rendimiento</li>
+                <li>Plan de mantenimiento anual</li>
+              </ul>
+            </article>
+            <article class="card service-card">
+              <h3>Electricidad domiciliaria</h3>
+              <p>
+                Trabajos eléctricos en el hogar o comercio: tomas, llaves, iluminación y
+                tableros, siempre priorizando la seguridad.
+              </p>
+              <ul class="pill-list">
+                <li>Instalación de tomas y llaves</li>
+                <li>Revisión de tableros</li>
+                <li>Iluminación interior y exterior</li>
+              </ul>
+            </article>
           </div>
         </section>
 
-        <section id="route-contact" class="route">
+        <section id="contacto" class="section">
           <header class="section-header">
             <h2>Contacto</h2>
-            <p>Canales directos para comunicarte con nosotros.</p>
+            <p>Elegí la forma de contacto que te quede más cómoda.</p>
           </header>
 
           <div class="grid two">
@@ -409,19 +203,17 @@
               <ul class="contact-list">
                 <li>
                   <span class="contact-label">Teléfono / WhatsApp</span>
-                  <span class="contact-value">+54 9 11 1234-5678</span>
+                  <a class="contact-value" href="tel:+5491112345678">+54 9 11 1234-5678</a>
                 </li>
                 <li>
                   <span class="contact-label">Email</span>
-                  <span class="contact-value">contacto@bianchideangelis.com</span>
+                  <a class="contact-value" href="mailto:contacto@bianchideangelis.com"
+                    >contacto@bianchideangelis.com</a
+                  >
                 </li>
                 <li>
                   <span class="contact-label">Horario de atención</span>
                   <span class="contact-value">Lunes a sábado de 8 a 20 hs</span>
-                </li>
-                <li>
-                  <span class="contact-label">Emergencias eléctricas</span>
-                  <span class="contact-value">24/7</span>
                 </li>
               </ul>
               <div class="badges">
@@ -430,35 +222,24 @@
               </div>
             </div>
 
-            <form id="contactForm" class="card card-form">
-              <h3>Escribinos un mensaje</h3>
-              <div class="field">
-                <label for="c-name">Nombre</label>
-                <input id="c-name" name="name" type="text" required />
+            <div class="card">
+              <h3>Contactanos ahora mismo</h3>
+              <p>Un clic y te atendemos por el canal que elijas.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="tel:+5491112345678">Llamar por teléfono</a>
+                <a
+                  class="btn btn-ghost"
+                  href="https://wa.me/5491112345678?text=Hola%20quiero%20consultar%20por%20un%20servicio%20t%C3%A9cnico%20de%20aires%20o%20electricidad."
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Escribir por WhatsApp
+                </a>
               </div>
-              <div class="field">
-                <label for="c-email">Email</label>
-                <input id="c-email" name="email" type="email" required />
-              </div>
-              <div class="field">
-                <label for="c-message">Mensaje</label>
-                <textarea
-                  id="c-message"
-                  name="message"
-                  rows="4"
-                  placeholder="Contanos en qué podemos ayudarte..."
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-full">
-                Enviar mensaje
-              </button>
-            </form>
+            </div>
           </div>
         </section>
       </main>
-
-      <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
       <footer class="footer">
         <div class="footer-left">

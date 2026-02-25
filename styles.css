@@ -233,16 +233,9 @@ body::after {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-  gap: 1.9rem;
-  align-items: stretch;
-}
-
-@media (max-width: 960px) {
-  .hero {
-    grid-template-columns: minmax(0, 1fr);
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
 }
 
 .hero-content h1 {
