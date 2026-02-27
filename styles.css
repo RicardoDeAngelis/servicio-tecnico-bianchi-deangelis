@@ -726,9 +726,7 @@ textarea {
   color: var(--text-softer);
 }
 
-.footer-right {
-  text-align: right;
-}
+
 
 @media (max-width: 600px) {
   .footer {
@@ -749,3 +747,63 @@ textarea {
   display: block;
 }
 
+.btn-wsp {
+  display: inline-block;
+  background: #25d366; /* Verde WhatsApp */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.social-links { margin-top: 20px; }
+.social-links a { margin-right: 15px; text-decoration: none; color: #333; }
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre el icono y el texto */
+  color: #2c3e50; /* Un gris azulado oscuro para mayor legibilidad */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.email-link:hover {
+  color: #007bff; /* Cambia a azul brillante al pasar el mouse */
+  text-decoration: underline;
+}
+
+.email-link i {
+  color: #007bff; /* El icono siempre resaltado */
+  font-size: 1.1rem;
+}
+
+.contact-hours {
+  display: flex;
+  flex-direction: column; /* Apila el título sobre el horario */
+  align-items: center;    /* Centra horizontalmente */
+  margin-top: 20px;       /* Separación del resto de los contactos */
+  padding: 15px;
+  background-color: #b4d7c0; /* Un fondo gris muy suave para diferenciarlo */
+  border-radius: 8px;
+  border-left: 4px solid #007bff; /* Un detalle de color lateral para que resalte */
+}
+
+.contact-hours .contact-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-hours .contact-value {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+}
